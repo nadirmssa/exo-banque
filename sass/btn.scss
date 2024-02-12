@@ -1,0 +1,26 @@
+.btn-standard {
+    background: #FBD3B9;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #bfa2f7;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
+    &:hover {
+        background: #f5b183;
+        box-shadow: rgba(9, 30, 66, 0.50) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+}
+#typeCompte {
+    margin-top: 5px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #faf4f0;
+    border: none;
+    border-bottom: 1px solid #bfa2f7;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.type {
+    margin-bottom: 15px;
+}

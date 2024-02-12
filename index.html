@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Banque Sam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./public/css/style.css" rel="stylesheet">
+    <script src="./public/js/app.js" type="module" defer></script>
+</head>
+
+<body class="page">
+    <header class="header">
+        <img src="./public/assets/banque_sam-logo.png" alt="logo banque" width="50">
+        <nav class="nav_link">
+            <a href="./index.html">Accueil</a>
+            <a href="./mycompte.html">Mon compte</a>
+            <a href="./admin.html">Admin</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section_hero">
+            <div class="inscription">
+                <h1>Créer un compte</h1>
+                <div class="inscription__ctn">
+                    <img src="./public/assets/banque_sam-logo.png" alt="logo banque">
+                    <form class="inscription__form">
+                        <div class="inscription__form-group">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" required>
+                        </div>
+                        <div class="inscription__form-group type">
+                            <label for="typeCompte">Type de compte</label>
+                            <select name="typeC" id="typeCompte">
+                                <option value="">Choisir type de compte</option>
+                                <option value="courant">Courant</option>
+                                <option value="epargne">Epargne</option>
+                            </select>
+                        </div>
+                        <div class="inscription__form-group">
+                            <label for="montant">Montant à créditer</label>
+                            <input type="text" id="montant" required placeholder="200€">
+                        </div>
+                        <button class="btn-standard" id="btn-submit" type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <button id="destroy">Destroy</button>
+        <div class="container-ft">
+            <p>By Nasawi</p>
+        </div>
+    </footer>
+</body>
+
+</html>

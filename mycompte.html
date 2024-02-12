@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Banque Sam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./public/css/style.css" rel="stylesheet">
+    <script src="./public/js/compte.js" type="module" defer></script>
+    <script src="./public/js/modal.js" type="module" defer></script>
+</head>
+
+<body class="page">
+    <header class="header">
+        <img src="./public/assets/banque_sam-logo.png" alt="logo banque" width="50">
+        <nav class="nav_link">
+            <a href="./index.html">Accueil</a>
+            <a href="./mycompte.html">Mon compte</a>
+            <a href="./admin.html">Admin</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section__hero">
+            <div class="compte">
+            </div>
+        </section>
+    </main>
+    <aside class="gestion">
+        <div class="gestion__ctn">
+            <button class="add-operation js-modal" data-target="#modal1">Nouvelle opération</button>
+        </div>
+    </aside>
+
+    <aside id="#modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="title__modal"
+        style="display: none;">
+        <div class="modal-wrapper js-modal-stop">
+            <button class="js-close-modal" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-dasharray="16" stroke-dashoffset="16"
+                        stroke-linecap="round" stroke-width="2">
+                        <path d="M7 7L17 17">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="16;0" />
+                        </path>
+                        <path d="M17 7L7 17">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s"
+                                values="16;0" />
+                        </path>
+                    </g>
+                </svg>
+            </button>
+            <h1 id="title__modal">Ajouter une opération</h1>
+            <form id="form_add-operation">
+                <div class="operation__form-group" hidden>
+                    <input type="text" id="identity" value="">
+                </div>
+                <div class="operation__form-group">
+                    <label>Type de transaction</label>
+                    <fieldset>
+                        <div>
+                            <input type="radio" id="ajouter" name="type" value="ajouter" checked />
+                            <label for="ajouter">Ajouter</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="retirer" name="type" value="retirer" />
+                            <label for="retirer">Retirer</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="operation__form-group_montant ">
+                    <label for="montant">Montant de la transaction</label>
+                    <input type="text" id="montant" required placeholder="200€">
+                </div>
+                <div class="ctn_btn">
+                    <button id="btn-valider" type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <footer class="footer">
+        <button id="destroy">Destroy</button>
+        <div class="container-ft">
+            <p>By Nasawi</p>
+        </div>
+    </footer>
+</body>
+
+</html>
